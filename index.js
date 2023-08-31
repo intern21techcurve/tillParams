@@ -33,7 +33,7 @@ app.get('/',(req,res)=>{
     
     console.log("sent a data by browser ",req.query.name)
     res.status(200).send({
-        message: "hello"
+        message: "hello "+ req.query.name
     })
 })
 
